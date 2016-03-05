@@ -12,3 +12,22 @@
 
 Если у вас нет VS 2015, вы можете установить ее с сайта https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx
 
+## План занятия
+
+* Разобрать базовый интерфейс Visual Studio
+  - открытие
+  - запуск
+  - дебаг
+  - go to definition
+* Разобрать базовай синтаксис C#
+  - `var`
+  - `class` + `interface`
+  - `out`
+
+## Задание
+
+ Написать имплементацию метода `FibonacciGenerator.Get(int n)` и отправить pull request в https://github.com/vors/Assignment2
+ с вашим решением.
+ Проверка по PR.
+ 
+ Замечание: PR не будет замержен, чтобы избежать конфликтов с другими студентами.
