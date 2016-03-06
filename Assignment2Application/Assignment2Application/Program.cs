@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace Assignment2Application
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             var generator = new FibonacciGenerator();
+
             Console.WriteLine("Enter n:");
             string line = Console.ReadLine();
             int n;
+
             if (int.TryParse(line, out n))
             {
                 long result = generator.Get(n);
