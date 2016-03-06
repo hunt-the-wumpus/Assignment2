@@ -8,15 +8,18 @@ namespace Assignment2Application
 {
     public class FibonacciGenerator
     {
-        /// <summary>
-        /// Return n-th Fibonacci number.
-        /// </summary>
-        /// <param name="n"></param>
-        /// <returns></returns>
         public long Get(int n)
         {
-            // Enter you code here
-            return 0;
+            if (n == 0) { return 0; }
+            else
+            {
+                if ((n == -1) || (n == 1)) { return 1; }
+                else
+                {
+                    if (n > 0) { return Get(n - 1) + Get(n - 2); }
+                    else { return Get(n + 2) - Get(n + 1); }
+                }
+            }
         }
     }
 }
