@@ -12,18 +12,18 @@ namespace UnitTestProject1
         [TestMethod]
         public void FibonacciGeneratorBasic()
         {
-            Assert.AreEqual(_gen.Get(0), 0);
+            Assert.AreEqual(_gen.Get(0), 1);
             Assert.AreEqual(_gen.Get(1), 1);
-            Assert.AreEqual(_gen.Get(2), 1);
-            Assert.AreEqual(_gen.Get(3), 2);
-            Assert.AreEqual(_gen.Get(4), 3);
-            Assert.AreEqual(_gen.Get(5), 5);
+            Assert.AreEqual(_gen.Get(2), 2);
+            Assert.AreEqual(_gen.Get(3), 3);
+            Assert.AreEqual(_gen.Get(4), 5);
+            Assert.AreEqual(_gen.Get(5), 8);
         }
 
         [TestMethod]
         public void FibonacciGenerator9()
         {
-            Assert.AreEqual(_gen.Get(9), 34);
+            Assert.AreEqual(_gen.Get(9), 55);
         }
 
         [TestMethod]
