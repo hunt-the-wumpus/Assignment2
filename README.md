@@ -47,7 +47,7 @@
 Конкретно:
 
 * Visual Studio Unit tests
-* AppVeyor
+* [AppVeyor](https://ci.appveyor.com/project/vors/assignment2)
 
 ## Заданиe
 Обновить PR, добившись чтобы все тесты проходили
