@@ -18,14 +18,19 @@ namespace Assignment2Application
  
           public long Get(int n)
         {
-            long current1 = 1;
-            long current2 = 1;
-            for (int i = 3; i <= n; ++i){
-                long x = current1 + current2;
-                current1 = current2;
-                current2 = x;
+            if (n == 0)
+                return 0;
+            else {
+                long current1 = 1;
+                long current2 = 1;
+                for (int i = 3; i <= n; ++i)
+                {
+                    long x = current1 + current2;
+                    current1 = current2;
+                    current2 = x;
+                }
+                return current2;
             }
-            return current2;
         }
 }
 }
