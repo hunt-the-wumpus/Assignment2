@@ -23,6 +23,8 @@ namespace Assignment2Application
 
         public long Get(int n)
         {
+            if (n > 1e6)
+                return 0;
             if (n < F.Count)
                 return F[n];
             long res = Get(n - 1) + Get(n - 2);
