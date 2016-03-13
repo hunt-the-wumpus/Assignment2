@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/8m4sobfiey94wqmo/branch/master?svg=true)](https://ci.appveyor.com/project/vors/assignment2/branch/master)
+
 # Assignment2
 Основы С# и Visual Studio
 
