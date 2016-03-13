@@ -15,8 +15,13 @@ namespace Assignment2Application
         /// <returns></returns>
         public long Get(int n)
         {
-            // Enter you code here
-            return 0;
+			long cur1 = 1, cur2 = 1;
+			for (int i = 3; i <= n; ++i) {
+				long temp = cur2;
+				cur2 += cur1;
+				cur1 = temp;
+			}
+            return cur2;
         }
     }
 }
