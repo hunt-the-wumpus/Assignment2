@@ -8,15 +8,29 @@ namespace Assignment2Application
 {
     public class FibonacciGenerator
     {
-        /// <summary>
-        /// Return n-th Fibonacci number.
-        /// </summary>
-        /// <param name="n"></param>
-        /// <returns></returns>
-        public long Get(int n)
+        List<long> F;
+        public FibonacciGenerator()
+         {
+             F = new List<long>();
+             F.Add(1);
+             F.Add(1);              
+         }
+ 
+          public long Get(int n)
         {
-            // Enter you code here
-            return 0;
+            if (n == 0)
+                return 0;
+            else {
+                long current1 = 1;
+                long current2 = 1;
+                for (int i = 3; i <= n; ++i)
+                {
+                    long x = current1 + current2;
+                    current1 = current2;
+                    current2 = x;
+                }
+                return current2;
+            }
         }
-    }
+}
 }
